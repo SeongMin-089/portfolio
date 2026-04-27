@@ -22,29 +22,32 @@
     @media (max-width:$breakpoint-sm) {
         flex-direction: column;
         align-items: flex-start;
-        
+
     }
 
 }
+
 .heroContent {
     display: flex;
     flex-direction: column;
     // justify-content: flex-start;
-    gap:$space-2
+    gap: $space-2
 }
+
 .badge {
-    padding:.3rem .7rem;
+    padding: .3rem .7rem;
     font-size: $font-size-xs;
     display: inline-flex;
     align-items: center;
-    gap:.4rem;
+    gap: .4rem;
     border-radius: $radius-full;
-    background-color: rgba(16,185,128,.15);
+    background-color: rgba(16, 185, 128, .15);
     width: auto;
     font-weight: 600;
     align-self: flex-start;
-    color:var(--color-success)
+    color: var(--color-success)
 }
+
 .badgeDot {
     width: .5rem;
     height: .5rem;
@@ -52,49 +55,64 @@
     background-color: currentColor;
     box-shadow: 0 0 0 .3rem rgba(16, 185, 128, .25);
 }
+
 .eyebrow {
-font-size: $font-size-sm;
-font-weight: 500;
-color:var(--color-text-muted)
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: var(--color-text-muted)
 }
+
 .title {
     font-size: clamp($font-size-3xl, 4.5vw, $space-8);
     list-style: 1.12;
     font-weight: 800;
-    color:var(--color-text)
+    color: var(--color-text)
 }
+
 .lead {
     max-width: 50rem;
     line-height: 1.65;
-    color:var(--color-text-muted);
+    color: var(--color-text-muted);
     font-size: $font-size-md;
 }
+
 .metaRow {
     display: flex;
     flex-wrap: wrap;
-    gap:$space-2
+    gap: $space-2
 }
+
 .meta {
     display: inline-flex;
     align-items: center;
-    gap:.6rem;
+    gap: .6rem;
     font-size: $font-size-sm;
-    color:var(--color-text-muted);
+    color: var(--color-text-muted);
 }
+
 .metaIcon {
     display: flex;
-    color:var(--color-primary);
+    color: var(--color-primary);
     flex-shrink: 0;
 }
+
 .ctaRow {
     display: flex;
-    gap:$space-1;
+    gap: $space-1;
+
     .btn {
-       display: inline-flex;
-       gap: $space-1; 
-       align-items: center;
+        display: inline-flex;
+        gap: $space-1;
+        align-items: center;
     }
 }
+
+.grid{
+    display: grid;
+    gap: $space-3;
+    align-items: start;
+}
+
 .heroVisual {
     display: flex;
     flex-direction: column;
@@ -128,11 +146,11 @@ color:var(--color-text-muted)
             height: 42%;
             border-radius: $radius-full;
             border: .2rem dashed color-mix(in srgb, var(--color-text-muted) 45%, transparent);
-                opacity: 0.55;
+            opacity: 0.55;
             position: absolute;
-            left:50%;
+            left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
 
 
         }
@@ -141,18 +159,109 @@ color:var(--color-text-muted)
 
     .statPills {
         display: flex;
-        gap:$space-1;
+        gap: $space-1;
         justify-content: center;
         max-width: 38rem;
     }
+
     .statPill {
-        padding:.3rem .7rem;
+        padding: .3rem .7rem;
         font-size: $font-size-sm;
         display: inline-flex;
         border-radius: $radius-full;
         background-color: var(--color-card-bg);
-        border:1px solid var(--color-border);
-        color:var(--color-text)
+        border: 1px solid var(--color-border);
+        color: var(--color-text);
+        white-space: nowrap;
     }
 
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: $radius-lg;
+    padding: $space-4;
+    box-shadow: var(--shadow-sm);
+    transition: $transition-theme;
+}
+
+.cardIcon {
+    width: $space-6;
+    height: $space-6;
+    border-radius: $radius-sm;
+    background: color-mix(in srgb, var(--color-primary) 14%, transparent);
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    color: var(--color-primary)
+}
+
+.cardTitle {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: var(--color-text-muted)
+}
+
+.cardSubtitle {
+    margin-top: .2rem;
+    font-size: $font-size-xs;
+    color: var(--color-text-muted)
+}
+
+.body {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+
+    &+& {
+        margin-top: $space-2;
+    }
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    margin-bottom: $space-2;
+
+}
+.valuesGrid {
+    display: grid;
+    gap: $space-1;
+    margin-top: .4rem;
+    @media (min-width:$breakpoint-sm) {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+.valueCard {
+    background-color: var(--color-bg-muted);
+    border: 1px solid var(--color-border);
+    border-radius: $radius-md;
+    padding: $space-2;
+    transition: $transition-theme;
+}
+
+.valueIcon {
+    width: $space-5;
+    height: $space-5;
+    border-radius: $radius-sm;
+    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    color: var(--color-primary)
+}
+
+
+.valueTitle {
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: var(--color-text)
+}
+
+.valueDesc {
+    line-height: 1.55;
+    font-size: $font-size-xs;
+    color: var(--color-text-muted)
 }
