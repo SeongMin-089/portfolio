@@ -38,11 +38,11 @@ const AboutHero = ({ icons }) => {
 
                 </div>
                 <div className={styles.ctaRow}>
-                    <a href="#" className="btn btn__primary">
+                    <a href="#" className={`btn btn__primary ${styles.btn}`}>
                         <IconDownload />
                         Download resume
                     </a>
-                    <a href="#" className="btn btn__outline">
+                    <a href="#" className={`btn btn__outline ${styles.btn}`}>
                         <IconGithub />
                         View Github
                     </a>

@@ -12,7 +12,6 @@ const AboutCard = ({ icons }) => {
           <IconUser />
         </span>
 
-      </div>
       <div>
         <h2 id='about-card-title' className={styles.cardTitle}>
           About me
@@ -20,6 +19,7 @@ const AboutCard = ({ icons }) => {
         <p className={styles.cardSubtitle}>
           How I work
         </p>
+      </div>
       </div>
       <div>
         <p className={styles.body}>

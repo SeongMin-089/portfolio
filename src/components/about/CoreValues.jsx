@@ -11,10 +11,11 @@ const CoreValues = ({ icons, coreValues }) => {
         </span>
         <div>
           <h2 id='values-title' className={styles.cardTitle}>
-            About me
+            Core values
           </h2>
           <p className={styles.cardSubtitle}>
-            How I work
+            Principles I optimize for
+            
           </p>
         </div>
       </div>
