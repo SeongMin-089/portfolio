@@ -3,6 +3,7 @@ import styles from './ProjectsPages.module.scss'
 import FeaturedProjectCard from '../../components/featuredProjectCard/FeaturedProjectCard'
 import { useReducedMotion } from 'framer-motion'
 import { projectFilters, projectsPageItems } from '../../utils/projectsPageData'
+import { projectItemMotion, projectItemTransition } from '../../utils/aniValue'
 const ProjectsPages = () => {
 
   const [filter, setFilter] = useState('all')
