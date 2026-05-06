@@ -8,6 +8,7 @@ import Skills from "./pages/skills/Skills"
 import PlaceholderPage from "./pages/PlaceholderPage"
 import Blog from "./pages/blog/Blog"
 import  ThemeProvider from './context/ThemeProvider'
+import SkillsPages from "./pages/skills/SkillsPages"
 
 import Layout from './components/layout/Layout'
 
@@ -33,7 +34,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="projects" element={<ProjectsPages />} />
-            <Route path="skills" element={<Skills />} />
+            <Route path="skills" element={<SkillsPages />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
             <Route path="privacy" element={<PlaceholderPage title="Privacy" />} />
