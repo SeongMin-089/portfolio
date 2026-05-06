@@ -7,7 +7,7 @@ import { certifications, skillCategories } from '../../utils/skillsPageData'
 const SkillsPages = () => {
 
     const CATEGORY_ICONS = {
-        moniter: icons.monitor,
+        monitor: icons.monitor,
         server: icons.server,
         flask: icons.flask,
         cloud: icons.cloud,

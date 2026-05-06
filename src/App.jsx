@@ -4,7 +4,7 @@ import Home from "./pages/home/Home"
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import ProjectsPages from "./pages/projects/ProjectsPages"
-import Skills from "./pages/skills/Skills"
+
 import PlaceholderPage from "./pages/PlaceholderPage"
 import Blog from "./pages/blog/Blog"
 import  ThemeProvider from './context/ThemeProvider'
