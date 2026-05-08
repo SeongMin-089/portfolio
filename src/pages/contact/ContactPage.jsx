@@ -145,23 +145,23 @@ const ContactPage = () => {
                 <div className={styles.availCard}>
                   <div className={styles.availIcon}>
                     <IconBriefcase />
+                  </div>
                     <p className={styles.availLabel}>Full time</p>
                     <p className={styles.availDesc}>Product-minded teams with strong design partnership</p>
-                  </div>
                 </div>
                 <div className={styles.availCard}>
                   <div className={styles.availIcon}>
                     <IconLaptop />
+                  </div>
                     <p className={styles.availLabel}>Full time</p>
                     <p className={styles.availDesc}>Product-minded teams with strong design partnership</p>
-                  </div>
                 </div>
                 <div className={styles.availCard}>
                   <div className={styles.availIcon}>
                     <IconGlobe />
+                  </div>
                     <p className={styles.availLabel}>Full time</p>
                     <p className={styles.availDesc}>Product-minded teams with strong design partnership</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ const ContactPage = () => {
               <form className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.row2}>
                   <div className={styles.field}>
-                    <label className={styles.label} htmlFor='contact-name'>Name</label>
+                      <label className={styles.label} htmlFor='contact-name'>Name</label>
                     <input
                       id='contact-name'
                       className={styles.input}
@@ -191,6 +191,7 @@ const ContactPage = () => {
                       onChange={(e) => setName(e.target.value)}
                       required
                       autoComplete='name'
+                      placeholder='이름을 입력하세요'
                       type="text" />
 
                   </div>
@@ -204,6 +205,7 @@ const ContactPage = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       required
                       autoComplete='email'
+                      placeholder='email을 입력하세요'
                       type="email" />
 
                   </div>
